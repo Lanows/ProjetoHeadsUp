@@ -14,15 +14,54 @@ public class TelaConfig extends AppCompatActivity {
         setContentView(R.layout.activity_tela_config);
 
         Button btnInserir = (Button) findViewById(R.id.btnInserir);
-        Button btnSair = (Button) findViewById(R.id.btnSair);
+        Button btnFacil = (Button) findViewById(R.id.btnFacil);
+        Button btnNormal = (Button) findViewById(R.id.btnNormal);
+        Button btnDificil = (Button) findViewById(R.id.btnDificil);
+        Button btnPersonalizado = (Button) findViewById(R.id.btnPersonalizado);
 
 
-        btnSair.setOnClickListener(new View.OnClickListener() {
+        btnInserir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next = new Intent(TelaConfig.this, TelaMenu.class);
+                Intent next = new Intent(TelaConfig.this, TelaConfig2.class);
                 startActivity(next);
             }
         });
+
+        btnFacil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent next = new Intent(TelaConfig.this, TelaConfig3.class);
+                startActivity(next);
+            }
+        });
+
+        btnNormal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent next = new Intent(TelaConfig.this, TelaConfig4.class);
+                startActivity(next);
+            }
+        });
+
+        btnDificil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent next = new Intent(TelaConfig.this, TelaConfig5.class);
+                startActivity(next);
+            }
+        });
+
+        btnPersonalizado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent next = new Intent(TelaConfig.this, TelaConfig6.class);
+                startActivity(next);
+            }
+        });
+
+
+
+
     }
 }
