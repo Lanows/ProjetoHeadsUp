@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TelaConfig6"></activity>
+        <activity android:name=".TelaJogoPersonalizado"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".TelaJogoDificil"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".TelaJogoFacil"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".TelaInfo4" />
+        <activity android:name=".TelaInfo3" />
+        <activity
+            android:name=".TelaJogoNormal"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".TelaConfig6" />
         <activity android:name=".TelaConfig5" />
         <activity android:name=".TelaConfig4" />
         <activity android:name=".TelaConfig3" />

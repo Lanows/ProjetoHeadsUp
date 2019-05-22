@@ -21,7 +21,7 @@ public class TelaModo extends AppCompatActivity {
         btnFacil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next = new Intent(TelaModo.this, TelaJogo.class);
+                Intent next = new Intent(TelaModo.this, TelaJogoFacil.class);
                 startActivity(next);
             }
         });
@@ -29,7 +29,23 @@ public class TelaModo extends AppCompatActivity {
         btnNormal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next = new Intent(TelaModo.this, TelaJogo.class);
+                Intent next = new Intent(TelaModo.this, TelaJogoNormal.class);
+                startActivity(next);
+            }
+        });
+
+        btnDificil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent next = new Intent(TelaModo.this, TelaJogoDificil.class);
+                startActivity(next);
+            }
+        });
+
+        btnPersonalizado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent next = new Intent(TelaModo.this, TelaJogoPersonalizado.class);
                 startActivity(next);
             }
         });

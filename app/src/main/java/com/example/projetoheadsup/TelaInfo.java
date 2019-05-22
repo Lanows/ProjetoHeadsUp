@@ -14,17 +14,9 @@ public class TelaInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_info);
 
-        ImageButton btnYoutube = (ImageButton) findViewById(R.id.btnYoutube);
         ImageButton btnWordpress = (ImageButton) findViewById(R.id.btnWordpress);
+        ImageButton btnYoutube = (ImageButton) findViewById(R.id.btnYoutube);
         ImageButton btnInstagram = (ImageButton) findViewById(R.id.btnInstagram);
-
-        btnYoutube.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent next = new Intent(TelaInfo.this, TelaModo.class);
-                startActivity(next);
-            }
-        });
 
         btnWordpress.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,10 +26,18 @@ public class TelaInfo extends AppCompatActivity {
             }
         });
 
+        btnYoutube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent next = new Intent(TelaInfo.this, TelaInfo3.class);
+                startActivity(next);
+            }
+        });
+
         btnInstagram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next = new Intent(TelaInfo.this, TelaModo.class);
+                Intent next = new Intent(TelaInfo.this, TelaInfo4.class);
                 startActivity(next);
             }
         });

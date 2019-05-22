@@ -33,11 +33,11 @@ public class Banco extends SQLiteOpenHelper {
         db.execSQL(criarTabela(TABLE_NAME2));
         db.execSQL(criarTabela(TABLE_NAME3));
 
-        clearAll();
-
-        inserirTabelaFacil();
-        inserirTabelaMedio();
-        inserirTabelaDificil();
+//        clearAll();
+//
+//        inserirTabelaFacil();
+//        inserirTabelaMedio();
+//        inserirTabelaDificil();
     }
 
     @Override
