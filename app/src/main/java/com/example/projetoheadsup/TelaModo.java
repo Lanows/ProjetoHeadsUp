@@ -1,6 +1,7 @@
 package com.example.projetoheadsup;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,33 +26,50 @@ public class TelaModo extends AppCompatActivity {
         btnFacil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                img3.setVisibility(v.VISIBLE);
+                //start a handler that will wait for 2000ms and then make the img invisible
+                Handler handler3 = new Handler();
+                handler3.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        img3.setVisibility(ImageView.INVISIBLE);
+                    }
+                }, 1000);
+                img2.setVisibility(v.VISIBLE);
+                //start a handler that will wait for 2000ms and then make the img invisible
+                Handler handler2 = new Handler();
+                handler2.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        img2.setVisibility(ImageView.INVISIBLE);
+                    }
+                }, 1000);
+                img1.setVisibility(v.VISIBLE);
+                //start a handler that will wait for 2000ms and then make the img invisible
+                Handler handler1 = new Handler();
+                handler1.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        img1.setVisibility(ImageView.INVISIBLE);
+                    }
+                }, 1000);
 
-                try {
-
-                    Thread.sleep(1000);
-                    img3.setVisibility(View.INVISIBLE);
-
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                try {
-
-                    Thread.sleep(1000);
-                    img2.setVisibility(View.INVISIBLE);
-
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                try {
-
-                    Thread.sleep(1000);
-                    img1.setVisibility(View.INVISIBLE);
-
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    Thread.sleep(1000);
+//                    img3.setVisibility(v.VISIBLE);
+////                    img3.setVisibility(v.INVISIBLE);
+////                    Thread.sleep(1000);
+//                    Thread.sleep(1000);
+//                    img2.setVisibility(v.VISIBLE);
+////                    img2.setVisibility(v.INVISIBLE);
+////                    Thread.sleep(1000);
+//                    Thread.sleep(1000);
+//                    img1.setVisibility(v.VISIBLE);
+////                    img1.setVisibility(v.INVISIBLE);
+//
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
 
                 Intent next = new Intent(TelaModo.this, TelaJogoFacil.class);
                 startActivity(next);
