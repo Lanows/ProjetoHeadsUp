@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class TelaModo extends AppCompatActivity {
 
@@ -17,10 +18,38 @@ public class TelaModo extends AppCompatActivity {
         Button btnNormal = (Button) findViewById(R.id.btnNormal);
         Button btnDificil = (Button) findViewById(R.id.btnDificil);
         Button btnPersonalizado = (Button) findViewById(R.id.btnPersonalizado);
+//        final ImageView img1 = (ImageView) findViewById(R.id.img1);
+//        final ImageView img2 = (ImageView) findViewById(R.id.img2);
+//        final ImageView img3 = (ImageView) findViewById(R.id.img3);
 
         btnFacil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+//                img3.setVisibility(View.VISIBLE);
+//                try {
+//                    Thread.sleep(1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//                img3.setVisibility(View.INVISIBLE);
+//
+//                img2.setVisibility(View.VISIBLE);
+//                try {
+//                    Thread.sleep(1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//                img2.setVisibility(View.INVISIBLE);
+//
+//                img1.setVisibility(View.VISIBLE);
+//                try {
+//                    Thread.sleep(1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//                img1.setVisibility(View.INVISIBLE);
+
                 Intent next = new Intent(TelaModo.this, TelaJogoFacil.class);
                 startActivity(next);
             }

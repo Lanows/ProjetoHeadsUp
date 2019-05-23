@@ -4,9 +4,12 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class TelaJogoFacil extends AppCompatActivity implements SensorEventListener {
 
@@ -26,6 +29,21 @@ public class TelaJogoFacil extends AppCompatActivity implements SensorEventListe
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
+        final TextView cronometro = (TextView) findViewById(R.id.cronometro);
+        CountDownTimer tempo = new CountDownTimer(61000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+//                int minutos = (int) (millisUntilFinished/1000/60);
+                int segundos = (int) (millisUntilFinished/1000)%60;
+                String ordem = String.format(Locale.getDefault(), "%02d",  segundos);
+                cronometro.setText(ordem);
+            }
+
+            @Override
+            public void onFinish() {
+
+            }
+        }.start();
     }
 
     @Override

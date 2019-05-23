@@ -21,4 +21,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.193" />
 
+    <TextView
+        android:id="@+id/cronometro"
+        android:layout_width="119dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="596dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
