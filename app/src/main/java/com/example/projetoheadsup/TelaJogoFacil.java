@@ -7,6 +7,8 @@ import android.hardware.SensorManager;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -25,6 +27,40 @@ public class TelaJogoFacil extends AppCompatActivity implements SensorEventListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_jogo_facil);
         texto = (TextView) findViewById(R.id.sensorText);
+
+        final ImageView img1 = (ImageView) findViewById(R.id.img1);
+        final ImageView img2 = (ImageView) findViewById(R.id.img2);
+        final ImageView img3 = (ImageView) findViewById(R.id.img3);
+
+        try {
+            img3.setVisibility(View.VISIBLE);
+
+            Thread.sleep(1000);
+            img3.setVisibility(View.INVISIBLE);
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            img2.setVisibility(View.VISIBLE);
+
+            Thread.sleep(1000);
+            img2.setVisibility(View.INVISIBLE);
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            img1.setVisibility(View.VISIBLE);
+
+            Thread.sleep(1000);
+            img1.setVisibility(View.INVISIBLE);
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
