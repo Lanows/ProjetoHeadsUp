@@ -21,7 +21,8 @@
             android:name=".TelaJogoFacil"
             android:screenOrientation="landscape" />
         <activity android:name=".TelaInfo4" />
-        <activity android:name=".TelaInfo3" />
+        <activity android:name=".TelaInfo3"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".TelaJogoNormal"
             android:screenOrientation="landscape" />

@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.SimpleCursorAdapter;
 
-import static com.example.projetoheadsup.MainActivity.banco;
-
 public class TelaConfig3 extends AppCompatActivity {
 
     private SimpleCursorAdapter mAdapter;
@@ -30,19 +28,6 @@ public class TelaConfig3 extends AppCompatActivity {
             }
         });
 
-        mCursor = readArtists();
-        mAdapter = new SimpleCursorAdapter(this, R.layout.list_layout, mCursor,
-                Banco.columns, new int[] { R.id._id, R.id.name },
-                0);
-
-//        setListAdapter(mAdapter);
-
-
     }
 
-    private Cursor readArtists() {
-        return banco.getWritableDatabase().query(Banco.TABLE_NAME0,
-                Banco.columns, null, new String[] {}, null, null,
-                null);
-    }
 }

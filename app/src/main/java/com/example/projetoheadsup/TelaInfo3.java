@@ -31,7 +31,7 @@ public class TelaInfo3 extends AppCompatActivity {
 
         mVideoView
                 .setVideoURI(Uri
-                        .parse("android.resource://" + getPackageName() + "/raw/moon"));
+                        .parse("android.resource://" + getPackageName() + "/raw/projeto"));
 
 
         // Add an OnPreparedListener to enable the MediaController once the video is ready

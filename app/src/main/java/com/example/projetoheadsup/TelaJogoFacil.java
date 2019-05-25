@@ -1,9 +1,11 @@
 package com.example.projetoheadsup;
 
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +14,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import java.util.Locale;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static android.view.View.VISIBLE;
 
@@ -22,8 +31,14 @@ public class TelaJogoFacil extends AppCompatActivity implements SensorEventListe
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
     int count = 0;
+    int mudarIndice = 0;
     private TextView texto;
     private long mLastUpdate;
+    private List array;
+    private List<Integer> indices;
+    private MediaPlayer passa;
+    private MediaPlayer ponto;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +50,15 @@ public class TelaJogoFacil extends AppCompatActivity implements SensorEventListe
         final ImageView img2 = (ImageView) findViewById(R.id.img2);
         final ImageView img3 = (ImageView) findViewById(R.id.img3);
 
+        passa = MediaPlayer.create(this,R.raw.passa);
+        ponto = MediaPlayer.create(this,R.raw.ponto);
+
+        array = Arrays.asList(getResources().getStringArray(R.array.facil));
+        indices = new ArrayList();
+        for (int i = 0; i < array.size(); i++){
+            indices.add(i);
+        }
+        Collections.shuffle(indices);
 
                 Handler handler3 = new Handler();
                 handler3.postDelayed(new Runnable() {
@@ -81,6 +105,22 @@ public class TelaJogoFacil extends AppCompatActivity implements SensorEventListe
 
             }
         }.start();
+
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(TelaJogoFacil.this, TelaResu.class);
+
+                Bundle bundle = new Bundle();
+                bundle.putString("valor", String.valueOf(count));
+
+                intent.putExtras(bundle);
+                startActivity(intent);
+                finish();
+
+            }
+        }, 64000);
     }
 
     @Override
@@ -105,14 +145,19 @@ public class TelaJogoFacil extends AppCompatActivity implements SensorEventListe
 
                 int z = (int) event.values[2];
 
-
-                if(z >= 4){
-                    texto.setText("Texto acima");
+                if(z >= 5){     //Texto para Cima
+                    if (indices != null) {
+                        ponto.start();
+                        indices.remove(mudarIndice);
+                    }
                     count++;
-                } else if (z <= -4) {
-                    texto.setText("Texto pra baixo");
+                } else if (z <= -5) {   ////Texto para Baixo
+                    mudarIndice = mudarIndice + 1;
+                    passa.start();
                 } else {
-                    texto.setText("To no meio\nViradas para cima " + count);
+                    if (indices != null) {
+                        texto.setText("" + array.get(indices.get(mudarIndice)));
+                    }
                 }
             }
         }

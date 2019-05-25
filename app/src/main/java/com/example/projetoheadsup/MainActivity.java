@@ -8,14 +8,11 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    static Banco banco;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        banco = new Banco(this);
 
         Button btnLogar = (Button) findViewById(R.id.btnLogar);
         Button btnSair = (Button) findViewById(R.id.btnSair);
