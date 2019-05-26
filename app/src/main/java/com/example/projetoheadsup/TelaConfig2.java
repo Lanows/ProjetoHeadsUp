@@ -26,8 +26,7 @@ public class TelaConfig2 extends AppCompatActivity {
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next = new Intent(TelaConfig2.this, TelaConfig.class);
-                startActivity(next);
+                finish();
             }
         });
 

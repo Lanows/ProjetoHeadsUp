@@ -4,108 +4,228 @@
 
     <string-array name="facil">
         <item>Abelha</item>
+        <item>Arara</item>
         <item>Baleia</item>
         <item>Borboleta</item>
         <item>Burro</item>
         <item>Cachorro</item>
+        <item>Camaleão</item>
+        <item>Cavalo</item>
+        <item>Camelo</item>
         <item>Caranguejo</item>
         <item>Cobra</item>
         <item>Coelho</item>
+        <item>Coruja</item>
         <item>Elefante</item>
+        <item>Esquilo</item>
+        <item>Formiga</item>
         <item>Galinha</item>
         <item>Gato</item>
+        <item>Girafa</item>
+        <item>Golfinho</item>
+        <item>Joaninha</item>
         <item>Leão</item>
+        <item>Leão-Marinho</item>
+        <item>Lontra</item>
         <item>Macaco</item>
         <item>Morcego</item>
         <item>Pato</item>
+        <item>Pavão</item>
+        <item>Pelicano</item>
+        <item>Pantera</item>
+        <item>Peixe</item>
         <item>Porco</item>
+        <item>Raposa</item>
         <item>Sapo</item>
+        <item>Tatu</item>
+        <item>Tubarão</item>
+        <item>Tigre</item>
         <item>Tartaruga</item>
+        <item>Tucano</item>
         <item>Urso</item>
-        <!--19 itens-->
+        <item>Urubu</item>
+        <item>Zebra</item>
+        <!--42 itens-->
     </string-array>
 
 
     <string-array name="normal">
         <item>Arya stark</item>
+        <item>Aladdin</item>
+        <item>Aquaman</item>
         <item>Bart Simpsons</item>
+        <item>Batman</item>
+        <item>Buzz Lightyear</item>
         <item>Bulma</item>
         <item>Capitã Marvel</item>
         <item>Capitão América</item>
+        <item>C-3PO</item>
+        <item>Chewbacca</item>
         <item>Daenerys</item>
+        <item>Darth Vader</item>
         <item>Dean Winchester</item>
+        <item>Demolidor</item>
         <item>Dr. Estranho</item>
+        <item>Dumbledore</item>
+        <item>Elsa</item>
+        <item>Edward Cullen</item>
+        <item>Eleven</item>
+        <item>Frodo</item>
         <item>Goku</item>
         <item>Gon</item>
+        <item>Han Solo</item>
         <item>Harry Potter</item>
+        <item>Hermione</item>
         <item>Hisoka</item>
         <item>Homem Aranha</item>
+        <item>Homem Formiga</item>
         <item>Homem de Ferro</item>
         <item>Homer Simpsons</item>
         <item>Hulk</item>
         <item>Jon snow</item>
+        <item>Jasmine</item>
         <item>Killua</item>
         <item>Kuririn</item>
+        <item>Kronk</item>
+        <item>Khal Drogo</item>
         <item>Lisa Simpsons</item>
+        <item>Loki</item>
+        <item>Mulan</item>
         <item>Naruto</item>
         <item>Orochimaru</item>
+        <item>Olaf</item>
+        <item>Pumba</item>
+        <item>R2-D2</item>
         <item>Sam Winchester</item>
         <item>Sasuke</item>
+        <item>Snape</item>
         <item>Shazam</item>
+        <item>Sansa Stark</item>
+        <item>Sr.Incrivel</item>
+        <item>Sra.Incrivel</item>
+        <item>Sora</item>
+        <item>Simba</item>
+        <item>Tarzan</item>
         <item>Thor</item>
+        <item>The Flash</item>
+        <item>Timão</item>
+        <item>Tyrion Lannister</item>
         <item>Vegetta</item>
+        <item>Viúva Negra</item>
         <item>Voldemort</item>
-        <!--28 itens-->
+        <item>Yoda</item>
+        <item>Woody</item>
+        <!--65 itens-->
     </string-array>
 
     <string-array name="dificil">
         <item>Abelha</item>
+        <item>Arara</item>
         <item>Baleia</item>
         <item>Borboleta</item>
         <item>Burro</item>
         <item>Cachorro</item>
+        <item>Camaleão</item>
+        <item>Cavalo</item>
+        <item>Camelo</item>
         <item>Caranguejo</item>
         <item>Cobra</item>
         <item>Coelho</item>
+        <item>Coruja</item>
         <item>Elefante</item>
+        <item>Esquilo</item>
+        <item>Formiga</item>
         <item>Galinha</item>
         <item>Gato</item>
+        <item>Girafa</item>
+        <item>Golfinho</item>
+        <item>Joaninha</item>
         <item>Leão</item>
+        <item>Leão-Marinho</item>
+        <item>Lontra</item>
         <item>Macaco</item>
         <item>Morcego</item>
         <item>Pato</item>
+        <item>Pavão</item>
+        <item>Pelicano</item>
+        <item>Pantera</item>
+        <item>Peixe</item>
         <item>Porco</item>
+        <item>Raposa</item>
         <item>Sapo</item>
+        <item>Tatu</item>
+        <item>Tubarão</item>
+        <item>Tigre</item>
         <item>Tartaruga</item>
+        <item>Tucano</item>
         <item>Urso</item>
+        <item>Urubu</item>
+        <item>Zebra</item>
         <item>Arya stark</item>
+        <item>Aladdin</item>
+        <item>Aquaman</item>
         <item>Bart Simpsons</item>
+        <item>Batman</item>
+        <item>Buzz Lightyear</item>
         <item>Bulma</item>
         <item>Capitã Marvel</item>
         <item>Capitão América</item>
+        <item>C-3PO</item>
+        <item>Chewbacca</item>
         <item>Daenerys</item>
+        <item>Darth Vader</item>
         <item>Dean Winchester</item>
+        <item>Demolidor</item>
         <item>Dr. Estranho</item>
+        <item>Dumbledore</item>
+        <item>Elsa</item>
+        <item>Edward Cullen</item>
+        <item>Eleven</item>
+        <item>Frodo</item>
         <item>Goku</item>
         <item>Gon</item>
+        <item>Han Solo</item>
         <item>Harry Potter</item>
+        <item>Hermione</item>
         <item>Hisoka</item>
         <item>Homem Aranha</item>
+        <item>Homem Formiga</item>
         <item>Homem de Ferro</item>
         <item>Homer Simpsons</item>
         <item>Hulk</item>
         <item>Jon snow</item>
+        <item>Jasmine</item>
         <item>Killua</item>
         <item>Kuririn</item>
+        <item>Kronk</item>
+        <item>Khal Drogo</item>
         <item>Lisa Simpsons</item>
+        <item>Loki</item>
+        <item>Mulan</item>
         <item>Naruto</item>
         <item>Orochimaru</item>
+        <item>Olaf</item>
+        <item>Pumba</item>
+        <item>R2-D2</item>
         <item>Sam Winchester</item>
         <item>Sasuke</item>
+        <item>Snape</item>
         <item>Shazam</item>
+        <item>Sansa Stark</item>
+        <item>Sr.Incrivel</item>
+        <item>Sra.Incrivel</item>
+        <item>Sora</item>
+        <item>Simba</item>
+        <item>Tarzan</item>
         <item>Thor</item>
+        <item>The Flash</item>
+        <item>Timão</item>
+        <item>Tyrion Lannister</item>
         <item>Vegetta</item>
+        <item>Viúva Negra</item>
         <item>Voldemort</item>
+        <item>Yoda</item>
+        <item>Woody</item>
     </string-array>
 
     <string-array name="personalizado">

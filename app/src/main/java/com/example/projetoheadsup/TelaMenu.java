@@ -45,8 +45,7 @@ public class TelaMenu extends AppCompatActivity {
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next = new Intent(TelaMenu.this, MainActivity.class);
-                startActivity(next);
+                finish();
             }
         });
     }

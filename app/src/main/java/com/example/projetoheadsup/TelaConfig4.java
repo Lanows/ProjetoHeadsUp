@@ -19,8 +19,7 @@ public class TelaConfig4 extends AppCompatActivity {
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next = new Intent(TelaConfig4.this, TelaConfig.class);
-                startActivity(next);
+                finish();
             }
         });
     }
